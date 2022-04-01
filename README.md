@@ -35,6 +35,7 @@
 - Becky Wilson - https://github.com/BeckyMWilson
 - Drew Knoeller - https://github.com/drewk2629
 - Matt Low - https://github.com/mlow1992
+- Bruce Marcenaro - https://github.com/bems2588
 <!-- TODO: Add Bruce's Information -->
 
 ### <h2><b>Summary</b></h2>
