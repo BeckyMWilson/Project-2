@@ -31,6 +31,9 @@ module.exports = function (sequelize, DataTypes) {
     }
   }, {
     timestamps: true,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'user',
     hooks: {
       beforeValidate: function (user) {
         if (user.changed('password')) {
