@@ -25,11 +25,37 @@ fs
     db[model.name] = model;
   });
 
-Object.keys(db).forEach(modelName => {
-  if (db[modelName].associate) {
-    db[modelName].associate(db);
-  }
+db.Game.belongsTo(db.Category, {
+  foreignKey: 'category_id'
 });
+
+db.Category.hasMany(db.Game, {
+  foreignKey: 'game_id'
+});
+
+db.Comment.belongsTo(db.User, {
+  foreignKey: 'user_id'
+});
+
+db.Comment.belongsTo(db.Game, {
+  foreignKey: 'game_id'
+});
+
+db.User.hasMany(db.Comment, {
+  foreignKey: 'user_id'
+});
+
+db.Game.hasMany(db.Comment, {
+  foreignKey: 'game_id'
+});
+
+db.User.hasMany(db.Game, {
+  foreignKey: 'game_id'
+});
+db.Game.belongsToMany(db.Game, {
+  foreignKey: 'user_id'
+});
+
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
