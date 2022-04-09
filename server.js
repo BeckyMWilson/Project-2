@@ -47,7 +47,7 @@ const syncOptions = {
 };
 
 if (app.get('env') === 'test') {
-  syncOptions.force = true;
+  syncOptions.force = false;
 }
 
 db.sequelize.sync(syncOptions).then(() => {

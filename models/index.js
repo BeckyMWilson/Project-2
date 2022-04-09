@@ -49,10 +49,15 @@ db.Game.hasMany(db.Comment, {
   foreignKey: 'game_id'
 });
 
-db.User.hasMany(db.Game, {
+db.User.belongsToMany(db.Game, {
+  through: db.User_Game,
+  as: 'user_game',
   foreignKey: 'game_id'
 });
-db.Game.belongsToMany(db.Game, {
+
+db.Game.belongsToMany(db.User, {
+  through: db.User_Game,
+  as: 'user_game',
   foreignKey: 'user_id'
 });
 
