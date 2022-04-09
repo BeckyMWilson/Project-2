@@ -14,6 +14,10 @@ module.exports = function (sequelize, DataTypes) {
         msg: 'Game already exists'
       }
     },
+    description: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     category_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
