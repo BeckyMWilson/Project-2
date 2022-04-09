@@ -13,22 +13,22 @@ module.exports = function (sequelize, DataTypes) {
           len: [4]
         }
       },
-      user_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: {
-            model: 'user',
-            key: 'id'
-        }
-      },
-      game_id: {
-          type: DataTypes.INTEGER,
-          allowNull: false,
-          references: {
-              model: 'game',
-              key: 'id'
-          }
-      }
+      // user_id: {
+      //   type: DataTypes.INTEGER,
+      //   allowNull: false,
+      //   references: {
+      //       model: User,
+      //       key: 'id'
+      //   }
+      // },
+      // game_id: {
+      //     type: DataTypes.INTEGER,
+      //     allowNull: false,
+      //     references: {
+      //         model: 'game',
+      //         key: 'id'
+      //     }
+      // }
     },
     {
       timestamps: true,
