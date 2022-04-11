@@ -1,7 +1,7 @@
 /* header / nav bar styles start */
 
 header {
-    background-image: url('../images/GamerBackground.jpg');
+    background-image: url('../images/HaloReachBackground.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -47,7 +47,7 @@ header nav ul {
 /* hero style */
 .hero {
     background-image: url('../images/GamerBackground.jpg');
-    height: 700px;
+    height: 250px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
