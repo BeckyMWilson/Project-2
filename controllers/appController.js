@@ -20,3 +20,4 @@ module.exports = function (db) {
     }
   };
 };
+//can you start working on the GET and POST routes for game and user?
