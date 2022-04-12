@@ -4,7 +4,7 @@ const ensureAuthenticated = require('../middlewares/ensureAuthenticated');
 module.exports = (passport, db) => {
   const AuthController = require('../controllers/authController')(passport, db);
   const AppController = require('../controllers/appController')(db);
-
+const UserController = require("../controllers/userControllers")
   // Authentication
   router.post('/register', AuthController.register);
   router.post('/login', AuthController.login);
@@ -18,5 +18,7 @@ module.exports = (passport, db) => {
   router.post('/examples', AppController.createExample);
   router.delete('/examples/:id', AppController.deleteExample);
 
+  //User Routes
+  router.get("/user/all", UserController.getAllUsers)
   return router;
 };
