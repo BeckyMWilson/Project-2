@@ -7,10 +7,13 @@
     <title>Project 2</title>
      <!--Import Google Icon Font-->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Import jquery cdn -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      <!--Import materialize.css-->
      <link type="text/css" rel="stylesheet" href="./assets/css/materialize.css"  media="screen,projection"/>
      <!-- The last CSS page takes priority -->
     <link rel="stylesheet" href="./assets/css/style.css"/>
+    
     
 
 </head>
@@ -21,13 +24,23 @@
         <nav class="deep-purple lighten-2">
             <div class="nav-wrapper">
               <a href="index.html" class="brand-logo">Project 2</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <a class="sidenav-close" href="#!"></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="sass.html">Explore</a></li>
-                <li><a href="signup.html">Register</a></li>
-                <li><a href="collapsible.html">Log-in</a></li>
+                <li><a class="modal-trigger" href="#register">Register</a></li>
+                <li><a class="modal-trigger" href="#login">Log-in</a></li>
               </ul>
             </div>
           </nav>
+          <!-- the ul is for the sidenav on smaller screens -->
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Explore</a></li>
+            <!-- # targets the id of the register model we want to open -->
+            <li><a class="modal-trigger" href="#register">Register</a></li>
+            <!-- # targets the id of the login modal we want to open -->
+            <li><a class="modal-trigger" href="#login">Log-in</a></li>
+          </ul>
       </div>
     </header>
 
@@ -37,16 +50,176 @@
         doloribus! </h2>
     </section>
 
+
     <main>
+    <!-- Login modal -->
+    <div id="login" class="modal">
+      <div class="modal-content">
+        <h4>Login</h4>
+        <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+<!-- TODO: MAKE SUBMIT BUTTON WORK -->
+      <button type="submit">Login</button>
+      <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      </div>
+    <div class="modal-footer">
+      <input type="button" value="Cancel" onclick="history.go(-1)"/>      <!-- <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a> -->
+    </div>
+    </div>
+
+    <!-- Register modal -->
+    <div id="register" class="modal">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-12">
+            <header class="create-user-wrap header-wrap">
+              <u><h2>Create Your Account</h2></u>
+              <h3 id="create-err-msg"></h3>
+            </header>
+      
+            <h3 id="err-msg"></h3>
+      
+            <form id= "create-form">
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputFirst">First Name</label>
+                  <input type="text" class="form-control" id="inputFirst" placeholder="John">
+                </div>
+              </div>
+      
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputLast">Last Name</label>
+                  <input type="text" class="form-control" id="inputLast" placeholder="Doe">
+                </div>
+              </div>
+      
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+      
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="inputPassword">Password</label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+              </div>
+      
+              <div>
+                <h2 id="message"></h2>
+              </div>
+      
+              <button type="submit" id="add-user" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- <div class="modal-content">
+        <h4>Create Your Account</h4>
+        <label for="firstname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+<!-- TODO: MAKE SUBMIT BUTTON WORK -->
+      <!-- <button type="submit">Login</button>
+      <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      </div>
+    <div class="modal-footer">
+      <input type="button" value="Cancel" onclick="history.go(-1)"/>      <!-- <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a> -->
+    </div>
+    </div> --> -->
+
+      <section class="black">
+        <div class="carousel carousel-slider" data-indicators="true">
+          <div class="carousel-fixed-item">
+            <div class="container">
+              <h1 class="white-text">Games I Have</h1>
+              <a class="btn waves-effect white grey-text darken-text-2" href="https://codepen.io/collection/nbBqgY/" target="_blank">button</a>
+            </div>
+          </div>
+          <div class="carousel-item red lighten-2 white-text" href="#one!">
+            <div class="container">
+              <h2>First Slide</h2>
+              <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>  
+          </div>
+          <div class="carousel-item amber darken-2 white-text" href="#two!">
+            <div class="container">
+              <h2>Second Slide</h2>
+              <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>  
+          </div>
+          <div class="carousel-item green white-text" href="#three!">
+            <div class="container">
+              <h2>Third Slide</h2>
+              <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>  
+          </div>
+          <div class="carousel-item blue white-text" href="#four!">
+            <div class="container">
+              <h2>Fourth Slide</h2>
+              <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>  
+          </div>
+        </div>
+      </section>
+
+      <section class="black">
+        <div class="carousel carousel-slider" data-indicators="true">
+          <div class="carousel-fixed-item">
+            <div class="container">
+              <h1 class="white-text">Games I Want</h1>
+              <a class="btn waves-effect white grey-text darken-text-2" href="https://codepen.io/collection/nbBqgY/" target="_blank">button</a>
+            </div>
+          </div>
+          <div class="carousel-item red lighten-2 white-text" href="#one!">
+            <div class="container">
+              <h2>First Slide</h2>
+              <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>  
+          </div>
+          <div class="carousel-item amber darken-2 white-text" href="#two!">
+            <div class="container">
+              <h2>Second Slide</h2>
+              <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>  
+          </div>
+          <div class="carousel-item green white-text" href="#three!">
+            <div class="container">
+              <h2>Third Slide</h2>
+              <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>  
+          </div>
+          <div class="carousel-item blue white-text" href="#four!">
+            <div class="container">
+              <h2>Fourth Slide</h2>
+              <p class="white-text">Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>  
+          </div>
+        </div>
+      </section>
+
       <section class="row">
       <section class="col s6">
         <h1>Games I have </h1>
         <hr/>
-    
           <div class="row">
             <div class="card small">
               <div class="card-image">
-                <img src="./assets/images/FortniteBackground.png" alt="Fronite">
+                <img src="./assets/images/HaloReachBackground.jpg" alt="Fronite">
                 <span class="card-title">Fornite</span>
               </div>
               <div class="card-content">
@@ -118,6 +291,7 @@
       
     </footer>
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="./assets/js/materialize.min.js"></script> 
+    <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./assets/js/scripts.js"></script>
 </body>
 </html>
