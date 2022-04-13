@@ -30,13 +30,11 @@
     </li>
 </ul>
 
-<!--TODO: Add team name before collaborators -->
-### <h2><b>Collaborators</b></h2>
+## <h2><b>Collaborators</b></h2>
 - Becky Wilson - https://github.com/BeckyMWilson
 - Drew Knoeller - https://github.com/drewk2629
 - Matt Low - https://github.com/mlow1992
-- Bruce Marcenaro - https://github.com/bems2588
-<!-- TODO: Add Bruce's Information -->
+- Bruno Marcenaro - https://github.com/bems2588
 
 ### <h2><b>Summary</b></h2>
 
@@ -45,12 +43,21 @@
 <h3>Design Tools:</h3>
  <ul>
    <li>
-    <!-- Adobe XD -->
+     Materialize
    </li>
    <li>
-    <!-- Adobe Photoshop -->
+    CSS
+   </li>
    <li>
-    <!-- Bulma -->
+    JavaScript
+   <li>
+    Sequelize
+   </li>
+   <li>
+    Node Express
+   </li>
+   <li>
+    mySQL
    </li>
 </ul>
 
@@ -112,7 +119,7 @@
 ### <h2><b>Challenges</b></h2>
 <ul>
  <li>
-    <!-- Resizing images when pulled from API. -->
+    Learning Materialize
  </li>
  <li>
     <!-- Resizing of text when pulled from API. -->
@@ -129,17 +136,22 @@
 ### <h2><b>Future Development</b></h2>
 <ul>
  <li>
-    <!-- Create a SMS to deliver a new message daily to user. -->
+    Getting the data to accurately display on the front end
  </li>
  <li>
-    <!-- Add tab order accessibility. -->
+    Ability to display more than 4 cards
  </li>
  <li>
-    <!-- Ability to delete images on gallery page. -->
+    Ability to suggest games the user might like based on their choices
  </li>
  <li>
-   <!-- Debug - forEach issues. User can open and close modal consecutively that causes multiple appends to the array. -->
+   Ability for the user to write reviews and rate games
  </li>
+ <li>
+   Add terms of service and privacy policy
+ </li>
+ <li>
+   Ability to sign-up with Facebook and Google accounts
 </ul>
 
 <!-- TODO: add links for website and github -->
@@ -148,12 +160,12 @@
  <li>
    <h3>Deployed at:</h3>
 
-   <!-- https://beckymwilson.github.io/XXX/ -->
+   https://sql-injectors.herokuapp.com/
  </li>
  <li>
    <h3>GitHub URL:</h3>
 
-   <!-- https://github.com/BeckyMWilson/XXX.git -->
+   https://github.com/BeckyMWilson/Project-2
  </li>
 </ul>
 
