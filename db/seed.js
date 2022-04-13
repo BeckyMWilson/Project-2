@@ -41,7 +41,7 @@ module.exports = (db) => {
               }).then(() => {
                 db.Game.create({
                   title: 'Triangle Strategy',
-                  description: "Triangle Strategy is a tactical role-playing game developed and published by Square Enix, co-developed by Artdink, and published by Nintendo.",
+                  description: "Triangle Strategy is a tactical role-playing game developed and published by Square Enix, co-developed by Artdink, and published by Nintendo",
                   category_id: '1',
                   game_id: '1'
                 }).then(() => {
@@ -65,7 +65,7 @@ module.exports = (db) => {
                         }).then(() => {
                           db.Game.create({
                             title: 'The Game of Life',
-                            description: "Also known simply as Life, is a board game that simulates a person's travels through his or her life.",
+                            description: "Also known simply as Life, is a board game that simulates a person's travels through his or her life",
                             category_id: '2',
                             game_id: '2'
                         });

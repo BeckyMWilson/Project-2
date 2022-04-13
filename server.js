@@ -25,8 +25,10 @@ app.use(express.static('public'));
 require('./config/passport')(db, app, passport); // pass passport for configuration
 
 // Define our routes
-app.use('/api', require('./routes/apiRoutes')(passport, db));
-app.use(require('./routes/htmlRoutes')(db));
+const api_routes = require('./routes/apiRoutes')
+const html_routes = require('./routes/htmlRoutes')
+app.use('/api', api_routes(passport, db));
+// app.use(html_routes(db));
 
 // Secure express app
 app.use(helmet.hsts({
