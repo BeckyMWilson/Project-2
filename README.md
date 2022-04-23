@@ -1,6 +1,4 @@
-# <b>Project-2</b>
-<!-- TODO: Add project name -->
-
+# <b>Beyond The Console</b>
 
 <h1><b>Table of Contents</b></h1>
 <ul>
@@ -8,7 +6,7 @@
      <a href="#Collaborators">Collaborators</a>
     </li>
     <li>
-     <a href=#Summary">Summary</a>
+     <a href="#Summary">Summary</a>
     </li>
     <li>
      <a href="#technologies">Technologies</a>
@@ -37,31 +35,21 @@
 - Bruno Marcenaro - https://github.com/bems2588
 
 ### <h2><b>Summary</b></h2>
+<h3>Beyond The Console is an app that any variety of gamer can use to keep track of their game collection and wishlist. Users can also view other profiles in order to gather new ideas for games they might like to try. Finally, people can comment and review games to help other users find exactly what they are looking for, or something they weren’t!</h3>
 
 ### <h2><b>Technologies</b></h2>
-<!-- TODO: Add design tools used -->
 <h3>Design Tools:</h3>
  <ul>
    <li>
-     Materialize
+    Materialize
    </li>
    <li>
     CSS
    </li>
    <li>
     JavaScript
-   <li>
-    Sequelize
-   </li>
-   <li>
-    Node Express
-   </li>
-   <li>
-    mySQL
-   </li>
 </ul>
 
-<!-- TODO: Add development tools used -->
 <h3>Development Tools:</h3>
  <ul>
    <li>
@@ -70,34 +58,40 @@
    <li>
     Visual Code Studio
    </li>
+   <li>
+    Sequelize
+   </li>
+   <li>
+    Node
+   </li>
+   <li>
+    Express
+   </li>
+   <li>
+    mySQL
+   </li>
+   <li>
+    Passport
+   </li>
  </ul>
 
 <!-- TODO: Add techniques used to design application -->
 <h3>Techniques Used to Design Application:</h3>
  <ul>
    <li>
-    <!-- Arrays -->
-   </li>
-   <li>
-    <!-- Conditions (if else statements) -->
+    Conditions (if else statements)
    </li>
    <li>    
-     <!-- Document Object Model (DOM) -->
+     Model-View-Controller (MVC)
    </li>
    <li>
-    <!-- Dynamically generated HTML elements -->
+    Dynamically generated HTML elements
    </li>
    <li>  
-    <!-- Fetch API -->
+    GET and POST routes
    </li>
    <li>
-    <!-- Functions -->
-   </li>
-   <li>
-    <!-- Local storage -->
-   </li>
-   <li>
-    <!-- Variables -->
+    Sessions
    </li>
  </ul>
 
@@ -115,28 +109,20 @@
  </li>
 </ul>
 
-<!-- TODO: Add challenges -->
 ### <h2><b>Challenges</b></h2>
 <ul>
  <li>
     Learning Materialize
  </li>
  <li>
-    <!-- Resizing of text when pulled from API. -->
- </li>
- <li>
-    <!-- Learning to use Bulma. -->
- </li>
- <li>
-    <!-- Pulling from local storage after refresh. The data was duplicating. -->
+    Starter Code
  </li>
 </ul>
 
-<!--TODO: Add future development -->
 ### <h2><b>Future Development</b></h2>
 <ul>
  <li>
-    Getting the data to accurately display on the front end
+    Getting the data to accurately display on the front-end
  </li>
  <li>
     Ability to display more than 4 cards
@@ -154,7 +140,6 @@
    Ability to sign-up with Facebook and Google accounts
 </ul>
 
-<!-- TODO: add links for website and github -->
 ### <h2><b>Links</b></h2>
 <ul>
  <li>
@@ -169,4 +154,14 @@
  </li>
 </ul>
 
-<!-- TODO: Add screenshots -->
+### <h2><b>Screenshots</b></h2>
+
+![Project Logo]()
+
+![Kanban Page]()
+
+![Landing Page]()
+
+
+
+
