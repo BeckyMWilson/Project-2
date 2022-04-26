@@ -156,7 +156,7 @@
 
 ### <h2><b>Screenshots</b></h2>
 
-![Project Logo]()
+![Project Logo](https://github.com/BeckyMWilson/Project-2/blob/main/public/assets/images/logo1.png)
 
 ![Kanban Page]()
 

@@ -78,6 +78,65 @@ body {
   text-align: center;
 }
 
+.carouselimage1 {
+  width:100%;
+  height:auto;
+  /* background-image: url("../images/eldenRing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+}
+
+.carouselimage2 {
+  background-image: url("../images/eldenRing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.carouselimage3 {
+  background-image: url("../images/finalFantasyXIV.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.carouselimage4 {
+  background-image: url("../images/Monopoly.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.carouselimage5 {
+  background-image: url("../images/Stratego.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.carouselimage6 {
+  background-image: url("../images/the-game-of-life.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.carouselimage7 {
+  background-image: url("../images/Kirby_and_The_Forgotten_Land_Icon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.carouselimage8 {
+  background-image: url("../images/mlbtheshow22.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
 main {
   flex: 1 0 auto;
 }

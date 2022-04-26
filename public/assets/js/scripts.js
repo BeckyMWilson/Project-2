@@ -14,7 +14,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
     // Triggers modal
     $('.modal').modal();
-    autoplay()   
+    // autoplay()   
 
   });
   
