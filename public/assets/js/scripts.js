@@ -23,6 +23,6 @@ $(document).ready(function(){
   function autoplay() {
       console.log("start autoplay");
       $('.carousel').carousel('next');
-      setTimeout(autoplay, 4500);
+      // setTimeout(autoplay, 4500);
   }
 
